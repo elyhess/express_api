@@ -12,7 +12,7 @@ app.use(helmet());
 app.use(morgan("combined"));
 app.use(express.json());
 
-app.use("/user", routes.user);
+app.use("/users", routes.user);
 
 app.use((req, res) => {
     res.status(404).send("404:Page not found");
