@@ -20,7 +20,7 @@ const user = (sequelize, DataTypes) => {
             freezeTableName: true,
         }
     );
-
+    // creates tables if one does not exist
     User.sync();
     return User;
 };
